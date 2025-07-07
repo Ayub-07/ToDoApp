@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="todo.css">
+  <title>Todo App</title>
+</head>
+<body>
+  <h1 class="main-head"> Todo App</h1>
+  <div class="grid-container">
+    <input type="text" class = "input-box" placeholder="Enter TODO here"/>
+    <div style="display: flex; flex-direction: column; align-items: flex-start;">
+      <label for="todo-date" style="font-size: 1rem; color: #2d3436; margin-bottom: 2px;">Due Date:</label>
+      <input type = "date" id = "todo-date">
+      <small style="color: #636e72; margin-top: 2px;">e.g. 2025-07-07</small>
+    </div>
+    <button class="add" onclick="addTodo()"> ADD </button>
+  </div>
+
+  <div class="todo-container grid-container"></div>
+  <footer>
+    <p>&copy; 2025 Mohammed Ayub. All rights reserved.</p>
+  </footer>
+  <script src="todo.js"></script>
+  
+  <script>
+    const dateInput = document.getElementById('todo-date');
+    if (dateInput) {
+      dateInput.addEventListener('click', function(e) {
+        this.showPicker && this.showPicker();
+      });
+    }
+  </script>
+</body>
+</html>

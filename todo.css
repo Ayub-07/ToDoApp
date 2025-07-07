@@ -1,0 +1,106 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  /* Center content horizontally only */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Remove vertical centering */
+  justify-content: flex-start;
+  min-height: 100vh;
+  background: linear-gradient(120deg, #bde7ea 0%, #bfdcab 100%);
+}
+
+.main-head{
+  text-align: center;
+}
+
+.input-box , #todo-date{
+  padding: 10px 5px;
+  border: 2px solid black;
+}
+
+#todo-date {
+  font-size: 1.1rem;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 3px solid #636e72;
+  background: #f5f6fa;
+  cursor: pointer;
+  min-width: 140px;
+  transition: border-color 0.2s;
+  margin-right: 30px;
+}
+
+
+
+.input-box:hover , #todo-date:hover{
+  box-shadow: 5px 5px 5px rgb(244, 236, 236);
+  border-color: rgb(0, 2, 2);
+  transform: scale(1.1);
+
+}
+
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 200px 150px 100px;
+  column-gap: 15px;
+  row-gap: 15px;
+  margin-top: 12px;
+  margin-left: 10px;
+  align-items: center;
+  
+}
+
+.btn-delete{
+  background-color: rgb(244, 84, 84);
+  border: none;
+  border-radius: 10px;
+  padding : 12px;
+  color: white;
+  cursor: pointer;
+}
+
+
+.add{
+  background-color: green;
+  color: white;
+  border : 2px solid black;
+  border-radius: 10px;
+  padding : 15px 0px;
+  font-size: 15px;
+  font-weight: 200px;
+  cursor: pointer;
+  width: 120px;
+  padding: 15px;
+  margin-left: 40px;
+}
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+  background-color: #2d3436;
+  color: white;
+  margin-top: auto;
+}
+
+.todo-container {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  padding: 1rem;
+  margin-top: 2rem;
+  min-width: 350px;
+}
+
+.btn-delete:hover {
+  background-color: #d63031;
+  transform: scale(1.15);
+  transition: 0.2s;
+}
+
+.add:hover {
+  background-color: #00b894;
+  transform: scale(1.05);
+  transition: 0.2s;
+}
